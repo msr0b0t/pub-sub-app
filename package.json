@@ -1,0 +1,20 @@
+{
+  "name": "pub-sub",
+  "version": "1.0.0",
+  "description": "App to learn redis/pub-sub",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mary Kouvela <marykouvela@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "xo": "^0.21.1"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "redis": "^2.8.0"
+  }
+}
