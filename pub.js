@@ -2,9 +2,12 @@ const redis = require('redis');
 
 // Create publisher
 const pub = redis.createClient();
+exports.pub = pub;
 
 function sendMessage() {
-	pub.publish('my-channel', 'Hello there!');
+	return pub.publish('my-channel', 'Hello there!');
 }
+exports.sendMessage = sendMessage;
 
-setInterval(sendMessage, 1000);
+const interval = setInterval(sendMessage, 1000);
+exports.interval = interval;
